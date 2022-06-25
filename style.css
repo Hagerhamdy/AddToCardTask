@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.list { 
+    width: 90%;
+    padding: 1rem 0;
+    border-radius: 6px;
+    height: 100vh;
+    margin: auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.2rem;
+    padding-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2rem 0;
+    margin: auto 3rem;
+    height: auto;
+}
+
+.cards .card {
+    width: 300px;
+    height: auto;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    color: #222;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 1px .0px 10px #000;
+    cursor: pointer;
+
+}
+
+.cards .card img {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    border-bottom: 1px solid #222;
+    margin: 2px 0;
+    opacity: .7;
+    transition: opacity 0.2s;
+}
+
+.cards .card img:hover {
+    opacity: 1;
+    transition: opacity 0.s;
+}
+
+.cards .card .content {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #fff !important;
+    border-radius: 15px;
+    position: relative;
+}
+
+.cards .card .content h3 {
+    background-color: #fff !important;
+    font-size: 18px;
+    text-align: right;
+    line-height: 1.9rem;
+    margin: 0 0 10px;
+}
+
+.cards .card .content p {
+    background-color: #fff !important;
+    text-align: right;
+    margin: 0 0 10px;
+    font-size: 15px;
+}
+
+.cards .card .content p span {
+    background-color: #fff !important;
+    text-align: right;
+    margin: 0 0 10px;
+    font-size: 15px;
+    color: rgb(211, 29, 29);
+    font-weight: 600;
+}
+
+.cards .card .content .btn {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 7px;
+    padding: 8px 50px;
+    margin: 5px auto;
+    border: none;
+    background-color: rgb(138, 81, 81);
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.cards .card .content .btn:hover {
+    color: #777;
+    z-index: 1;
+    border-radius: 7px;
+    background: transparent;
+    border: 1px solid #777;
+}
+
+.cards .card .content .btn i{
+    background-color: transparent;
+}
+
+
+.list .show-card p{
+    margin: 5rem auto;
+    display: flex;
+    justify-content: center;
+    background-color: #777;
+    color: #fff;
+    font-size: 17px;
+    line-height :1.8rem;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.list .show-card p:nth-child(2) span{
+    background: transparent;
+    color: #fff;
+}
